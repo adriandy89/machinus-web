@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Machinus · Una aventura gráfica sin palabras</title>
+<meta name="description" content="Machinus es una aventura gráfica sin palabras para Android. Eres Tilo, un buzón-autómata que lleva la última carta a la tortuga gigante que carga una ciudad a cuestas.">
+<link rel="canonical" href="https://adriandy89.github.io/machinus/es/">
+<link rel="alternate" hreflang="en" href="https://adriandy89.github.io/machinus/">
+<link rel="alternate" hreflang="es" href="https://adriandy89.github.io/machinus/es/">
+<link rel="alternate" hreflang="x-default" href="https://adriandy89.github.io/machinus/">
+<meta name="theme-color" content="#f3e6cf">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Machinus">
+<meta property="og:title" content="Machinus · Una aventura gráfica sin palabras">
+<meta property="og:description" content="Un buzón. Una última carta. Una tortuga gigante que lleva una ciudad a cuestas.">
+<meta property="og:url" content="https://adriandy89.github.io/machinus/es/">
+<meta property="og:image" content="https://adriandy89.github.io/machinus/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="La tortuga mecánica gigante con una ciudad oxidada sobre el caparazón, y Tilo, el buzón, a su lado.">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="../assets/img/icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="preload" href="../assets/fonts/caladea-bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "Machinus",
+  "url": "https://adriandy89.github.io/machinus/es/",
+  "image": "https://adriandy89.github.io/machinus/assets/img/og-image.jpg",
+  "description": "Una aventura gráfica sin palabras: un buzón-autómata lleva la última carta a la tortuga gigante que carga una ciudad a cuestas.",
+  "genre": ["Aventura", "Puzles", "Aventura gráfica"],
+  "gamePlatform": "Android",
+  "operatingSystem": "Android",
+  "applicationCategory": "Game",
+  "playMode": "SinglePlayer",
+  "inLanguage": ["es", "en"],
+  "author": { "@type": "Person", "name": "Adrian Duardo" }
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Machinus, inicio">
+      <img src="../assets/img/emblem-112.webp" width="101" height="112" alt="">
+      <span>Machinus</span>
+    </a>
+    <nav class="nav" aria-label="Secciones">
+      <a href="#historia">Historia</a>
+      <a href="#trailer">Tráiler</a>
+      <a href="#juego">El juego</a>
+      <a href="#capturas">Capturas</a>
+    </nav>
+    <div class="header-actions">
+      <a class="lang" href="../?lang=en" hreflang="en" lang="en" data-lang="en" aria-label="Read in English">EN</a>
+      <a class="btn btn-play btn-sm" href="https://play.google.com/store/apps/details?id=com.machinus.ultimosello&amp;hl=es">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 3.9v16.2c0 .9 1 1.4 1.7.9l12.8-8.1c.7-.4.7-1.4 0-1.8L7.7 3C7 2.5 6 3 6 3.9z"/></svg>
+        Google Play
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <picture class="hero__art">
+      <source type="image/webp" srcset="../assets/img/hero-1000.webp 1000w, ../assets/img/hero-1600.webp 1600w, ../assets/img/hero-2400.webp 2400w" sizes="100vw">
+      <img src="../assets/img/hero-1600.jpg" width="2400" height="1200" fetchpriority="high"
+           alt="Una tortuga mecánica gigante, con una ciudad oxidada de torres y chimeneas sobre el caparazón, duerme de pie en aguas poco profundas bajo un cielo cálido de tarde. Tilo, un pequeño buzón sobre un muelle, está frente a su cabeza.">
+    </picture>
+    <div class="hero__copy">
+      <div class="hero__copy-inner">
+        <p class="hero__eyebrow">Una aventura gráfica sin palabras</p>
+        <h1 id="hero-title">Machinus</h1>
+        <p class="hero__lead">Un buzón. Una última carta. Una tortuga gigante que lleva una ciudad a cuestas.</p>
+      </div>
+    </div>
+    <div class="hero__bar wrap">
+      <div class="ticket">
+        <div class="cta-row">
+          <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.machinus.ultimosello&amp;hl=es">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 3.9v16.2c0 .9 1 1.4 1.7.9l12.8-8.1c.7-.4.7-1.4 0-1.8L7.7 3C7 2.5 6 3 6 3.9z"/></svg>
+            <span><small>Consíguelo en</small><span>Google Play</span></span>
+          </a>
+          <a class="btn btn-ghost" href="#trailer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M10 8.3v7.4c0 .5.5.8.9.5l5.6-3.7c.4-.2.4-.8 0-1L10.9 7.8c-.4-.3-.9 0-.9.5z"/></svg>
+            Ver el tráiler
+          </a>
+        </div>
+        <ul class="chips" aria-label="De un vistazo">
+          <li>Ni una palabra</li>
+          <li>Unas 4 horas</li>
+          <li>3 finales</li>
+          <li>Sin anuncios ni compras</li>
+          <li>Se juega sin conexión</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="historia" aria-labelledby="story-title">
+    <div class="wrap story">
+      <div class="story__art reveal">
+        <img src="../assets/img/emblem-480.webp" width="431" height="480" loading="lazy" decoding="async"
+             alt="Un sello de correos con un sobre cerrado con un corazón de lacre.">
+        <svg class="postmark" viewBox="0 0 240 130" aria-hidden="true" focusable="false">
+          <defs><path id="pm-story" d="M65 65m-43 0a43 43 0 1 1 86 0a43 43 0 1 1-86 0"/></defs>
+          <g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round">
+            <circle cx="65" cy="65" r="56"/><circle cx="65" cy="65" r="31"/>
+            <path d="M128 36c10-7 20-7 30 0s20 7 30 0 20-7 30 0"/><path d="M128 56c10-7 20-7 30 0s20 7 30 0 20-7 30 0"/>
+            <path d="M128 76c10-7 20-7 30 0s20 7 30 0 20-7 30 0"/><path d="M128 96c10-7 20-7 30 0s20 7 30 0 20-7 30 0"/>
+          </g>
+          <text font-family="Caladea, Georgia, serif" font-weight="700" font-size="12.5" letter-spacing="3" fill="currentColor"><textPath href="#pm-story">MACHINUS · ÚLTIMA CARTA ·</textPath></text>
+          <text x="65" y="71" text-anchor="middle" font-family="Caladea, Georgia, serif" font-weight="700" font-size="17" fill="currentColor">2026</text>
+        </svg>
+      </div>
+      <div class="reveal">
+        <span class="kicker mark-return">La historia</span>
+        <h2 class="visually-hidden" id="story-title">La historia</h2>
+        <p class="story__opening">Una carta cae en la ranura de un buzón olvidado. Va dirigida a la tortuga gigante que lleva una ciudad a cuestas.</p>
+        <p>Eres Tilo, un buzón-autómata que anda a saltitos y no ha olvidado su deber. Caparazón, la ciudad oxidada que vive sobre el lomo de la Tortuga, lleva años parada: el Gremio del Lastre cerró Correos, fundió los sellos y clavó anclas para que nada se moviera.</p>
+        <p>Alguien tiene que entregar la última carta. Y solo queda Tilo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--night" id="trailer" aria-labelledby="trailer-title">
+    <div class="wrap center">
+      <span class="kicker mark-urgent">Tráiler</span>
+      <h2 class="h2" id="trailer-title">Una ciudad que lleva años parada</h2>
+      <p class="lede">Recorre los muelles, los mercados y los tejados de una ciudad mecánica, y baja hasta donde no llega la luz.</p>
+      <div class="video reveal">
+        <div class="stamp">
+          <video controls playsinline preload="none" width="1280" height="720" poster="../assets/img/trailer-poster.jpg">
+            <source src="../assets/video/trailer-es.mp4" type="video/mp4">
+          </video>
+        </div>
+        <button class="video__play" type="button" aria-label="Reproducir el tráiler">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 3.9v16.2c0 .9 1 1.4 1.7.9l12.8-8.1c.7-.4.7-1.4 0-1.8L7.7 3C7 2.5 6 3 6 3.9z"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="juego" aria-labelledby="game-title">
+    <div class="wrap">
+      <div class="center reveal">
+        <span class="kicker">Qué lo hace distinto</span>
+        <h2 class="h2" id="game-title">Mira, toca y piensa. Y, sobre todo, sella.</h2>
+        <p class="lede">Una aventura gráfica de mirar, tocar y pensar. Recoges, combinas, ayudas a los robots y criaturas que te cruzas y resuelves puzles mecánicos de cerca.</p>
+      </div>
+
+      <div class="features">
+        <article class="feature reveal">
+          <div class="feature__media">
+            <div class="stamp"><img src="../assets/img/feat-words.webp" width="1120" height="840" loading="lazy" decoding="async"
+                 alt="Una burbuja de pensamiento con pequeños pictogramas flota sobre Tilo y una gaviota de latón en la sala de clasificación."></div>
+          </div>
+          <div>
+            <span class="feature__num">01</span>
+            <h3>Ni una palabra</h3>
+            <p>La historia se cuenta con dibujos, gestos y sonido. Los personajes piden lo que quieren con burbujas de pictogramas, y Tilo piensa en dibujos.</p>
+          </div>
+        </article>
+
+        <article class="feature reveal">
+          <div class="feature__media">
+            <div class="stamp"><img src="../assets/img/feat-stamps.webp" width="1120" height="840" loading="lazy" decoding="async"
+                 alt="Una marca de visto bueno estampada en el peaje junto al mar, con Tilo esperando al lado de la barrera."></div>
+            <img class="feature__accent" src="../assets/img/stamp-received.webp" width="256" height="256" loading="lazy" decoding="async" alt="">
+          </div>
+          <div>
+            <span class="feature__num">02</span>
+            <h3>Los sellos son tus palabras</h3>
+            <p>Recibido, Urgente, Frágil… Cada sello es una idea que el mundo entiende: estampa Urgente en una etiqueta y la cola se aparta.</p>
+            <div class="stamp-row" aria-hidden="true">
+              <img src="../assets/img/stamp-urgent.webp" width="256" height="256" loading="lazy" decoding="async" alt="">
+              <img src="../assets/img/stamp-fragile.webp" width="256" height="256" loading="lazy" decoding="async" alt="">
+              <img src="../assets/img/stamp-return-to-sender.webp" width="256" height="256" loading="lazy" decoding="async" alt="">
+              <img src="../assets/img/stamp-to-head.webp" width="256" height="256" loading="lazy" decoding="async" alt="">
+            </div>
+          </div>
+        </article>
+
+        <article class="feature reveal">
+          <div class="feature__media">
+            <div class="stamp"><img src="../assets/img/feat-spark.webp" width="880" height="660" loading="lazy" decoding="async"
+                 alt="Tilo y su compañera en un desguace al atardecer, junto a un viejo ermitaño de cuerda y su tienda."></div>
+          </div>
+          <div>
+            <span class="feature__num">03</span>
+            <h3>Una ladrona por amiga</h3>
+            <p>Chispa, una ratona de cobre con fama de ladrona, se hace tu compañera y se cuela donde Tilo no cabe.</p>
+          </div>
+        </article>
+
+        <article class="feature reveal">
+          <div class="feature__media">
+            <div class="stamp">
+              <div class="stamp__fill">
+                <img src="../assets/img/item-route-sheet.webp" width="256" height="256" loading="lazy" decoding="async"
+                     alt="Una hoja de ruta gastada con tres casillas unidas por caminos de puntos.">
+                <svg class="postmark" viewBox="0 0 130 130" aria-hidden="true" focusable="false">
+                  <defs><path id="pm-route" d="M65 65m-43 0a43 43 0 1 1 86 0a43 43 0 1 1-86 0"/></defs>
+                  <g fill="none" stroke="currentColor" stroke-width="2.6"><circle cx="65" cy="65" r="56"/><circle cx="65" cy="65" r="31"/></g>
+                  <text font-family="Caladea, Georgia, serif" font-weight="700" font-size="12.5" letter-spacing="3" fill="currentColor"><textPath href="#pm-route">HOJA DE RUTA · 3 FINALES ·</textPath></text>
+                  <text x="65" y="72" text-anchor="middle" font-family="Caladea, Georgia, serif" font-weight="700" font-size="22" fill="currentColor">3</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div>
+            <span class="feature__num">04</span>
+            <h3>Decisiones sin respuesta mala</h3>
+            <p>Algunos problemas tienen tres salidas buenas. Lo que eliges queda en tu hoja de ruta y decide cuál de los tres finales verás.</p>
+          </div>
+        </article>
+      </div>
+
+      <ul class="facts reveal" aria-label="En cifras">
+        <li class="fact"><strong>~4 h</strong><span>un prólogo y seis capítulos</span></li>
+        <li class="fact"><strong>40+</strong><span>puzles en cada partida</span></li>
+        <li class="fact"><strong>3</strong><span>finales distintos</span></li>
+        <li class="fact"><strong>15</strong><span>cartas perdidas por encontrar</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="capturas" aria-labelledby="shots-title" style="padding-top:0">
+    <div class="wrap">
+      <div class="center reveal">
+        <span class="kicker mark-eye">Capturas</span>
+        <h2 class="h2" id="shots-title">Un mundo para mirar despacio</h2>
+      </div>
+      <ul class="gallery">
+        <li class="reveal"><figure><a href="../assets/img/shot-01-1600.webp" data-lightbox data-caption="Una ciudad sobre una tortuga"><div class="stamp"><img src="../assets/img/shot-01-800.webp" srcset="../assets/img/shot-01-800.webp 800w, ../assets/img/shot-01-1600.webp 1600w" sizes="(min-width: 1000px) 560px, 100vw" width="1600" height="900" loading="lazy" decoding="async" alt="La pantalla de título: la Tortuga y su ciudad bajo la tormenta, con el sello de la carta arriba."></div></a><figcaption>Una ciudad sobre una tortuga</figcaption></figure></li>
+        <li class="reveal"><figure><a href="../assets/img/shot-02-1600.webp" data-lightbox data-caption="Una carta. Ni una palabra."><div class="stamp"><img src="../assets/img/shot-02-800.webp" srcset="../assets/img/shot-02-800.webp 800w, ../assets/img/shot-02-1600.webp 1600w" sizes="(min-width: 1000px) 560px, 100vw" width="1600" height="900" loading="lazy" decoding="async" alt="El prólogo: Tilo y una gaviota de latón en la vieja sala de clasificación de Correos."></div></a><figcaption>Una carta. Ni una palabra.</figcaption></figure></li>
+        <li class="reveal"><figure><a href="../assets/img/shot-03-1600.webp" data-lightbox data-caption="Los sellos son tus palabras"><div class="stamp"><img src="../assets/img/shot-03-800.webp" srcset="../assets/img/shot-03-800.webp 800w, ../assets/img/shot-03-1600.webp 1600w" sizes="(min-width: 1000px) 560px, 100vw" width="1600" height="900" loading="lazy" decoding="async" alt="Un sello en uso: la marca de visto bueno en la verja del peaje del funicular y la barra de sellos arriba."></div></a><figcaption>Los sellos son tus palabras</figcaption></figure></li>
+        <li class="reveal"><figure><a href="../assets/img/shot-04-1600.webp" data-lightbox data-caption="Piensa en dibujos"><div class="stamp"><img src="../assets/img/shot-04-800.webp" srcset="../assets/img/shot-04-800.webp 800w, ../assets/img/shot-04-1600.webp 1600w" sizes="(min-width: 1000px) 560px, 100vw" width="1600" height="900" loading="lazy" decoding="async" alt="Una burbuja de pensamiento con pictogramas en la sala de clasificación."></div></a><figcaption>Piensa en dibujos</figcaption></figure></li>
+        <li class="reveal"><figure><a href="../assets/img/shot-05-1600.webp" data-lightbox data-caption="Puzles justos, sin prisas"><div class="stamp"><img src="../assets/img/shot-05-800.webp" srcset="../assets/img/shot-05-800.webp 800w, ../assets/img/shot-05-1600.webp 1600w" sizes="(min-width: 1000px) 560px, 100vw" width="1600" height="900" loading="lazy" decoding="async" alt="Primer plano de un puzle mecánico: las levas de una gaviota de latón sobre un banco de trabajo."></div></a><figcaption>Puzles justos, sin prisas</figcaption></figure></li>
+        <li class="reveal"><figure><a href="../assets/img/shot-06-1600.webp" data-lightbox data-caption="Una ladrona por amiga"><div class="stamp"><img src="../assets/img/shot-06-800.webp" srcset="../assets/img/shot-06-800.webp 800w, ../assets/img/shot-06-1600.webp 1600w" sizes="(min-width: 1000px) 560px, 100vw" width="1600" height="900" loading="lazy" decoding="async" alt="Chispa, la ratona de cobre, con Tilo y el Ermitaño en el desguace."></div></a><figcaption>Una ladrona por amiga</figcaption></figure></li>
+        <li class="reveal"><figure><a href="../assets/img/shot-07-1600.webp" data-lightbox data-caption="Lleva tu propia luz"><div class="stamp"><img src="../assets/img/shot-07-800.webp" srcset="../assets/img/shot-07-800.webp 800w, ../assets/img/shot-07-1600.webp 1600w" sizes="(min-width: 1000px) 560px, 100vw" width="1600" height="900" loading="lazy" decoding="async" alt="Una sala oscura en una cueva, iluminada solo por un farol."></div></a><figcaption>Lleva tu propia luz</figcaption></figure></li>
+        <li class="reveal"><figure><a href="../assets/img/shot-08-1600.webp" data-lightbox data-caption="Aquí todo se pesa"><div class="stamp"><img src="../assets/img/shot-08-800.webp" srcset="../assets/img/shot-08-800.webp 800w, ../assets/img/shot-08-1600.webp 1600w" sizes="(min-width: 1000px) 560px, 100vw" width="1600" height="900" loading="lazy" decoding="async" alt="El mercado del caparazón, con una gran noria, balanzas y puestos."></div></a><figcaption>Aquí todo se pesa</figcaption></figure></li>
+      </ul>
+
+      <div class="panels">
+        <section class="panel reveal" aria-labelledby="features-title">
+          <h3 id="features-title">Características</h3>
+          <ul class="ticks">
+            <li>Pensado para el tacto: todo se juega con un dedo.</li>
+            <li>Unas 4 horas: un prólogo y seis capítulos.</li>
+            <li>Más de 40 puzles en cada partida: objetos, sellos, compañera y primeros planos mecánicos.</li>
+            <li>Tres finales distintos según tus decisiones.</li>
+            <li>15 cartas perdidas por encontrar. Entrégalas y mira qué cambia.</li>
+            <li>Pistas en dibujos cuando te atascas, en dos niveles.</li>
+            <li>Sin callejones sin salida ni tiempo límite: a tu ritmo.</li>
+            <li>Guardado automático y tres partidas.</li>
+          </ul>
+        </section>
+        <section class="panel reveal" aria-labelledby="a11y-title">
+          <h3 id="a11y-title">Accesibilidad</h3>
+          <ul class="ticks">
+            <li>Botón «revelar»: enseña todo lo que se puede tocar.</li>
+            <li>Arrastrar es opcional: toca el objeto y después el destino.</li>
+            <li>Opciones de movimiento reducido y de relámpagos atenuados.</li>
+            <li>Interfaz escalable hasta el 150 %.</li>
+            <li>Subtítulos opcionales para los pictogramas, en español e inglés.</li>
+            <li>Nada se cuenta solo con sonido.</li>
+            <li>Guías sin palabras para aprender los gestos, que se pueden apagar.</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <section class="section finale" aria-labelledby="finale-title">
+    <div class="finale__bg" aria-hidden="true">
+      <img src="../assets/img/shot-07-1600.webp" width="1600" height="900" loading="lazy" decoding="async" alt="">
+    </div>
+    <div class="wrap reveal">
+      <img class="emblem" src="../assets/img/emblem-112.webp" width="101" height="112" loading="lazy" decoding="async" alt="">
+      <h2 class="h2" id="finale-title">La última carta te espera.</h2>
+      <p class="lede">Sin anuncios y sin compras dentro del juego. Se juega sin conexión.</p>
+      <div class="cta-row">
+        <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.machinus.ultimosello&amp;hl=es">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 3.9v16.2c0 .9 1 1.4 1.7.9l12.8-8.1c.7-.4.7-1.4 0-1.8L7.7 3C7 2.5 6 3 6 3.9z"/></svg>
+          <span><small>Consíguelo en</small><span>Google Play</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="./"><img src="../assets/img/emblem-112.webp" width="101" height="112" alt=""><span>Machinus</span></a>
+      <p>Una aventura gráfica sin palabras para Android.</p>
+    </div>
+    <div>
+      <p class="footer-title">Juego</p>
+      <ul class="footer-links">
+        <li><a href="https://play.google.com/store/apps/details?id=com.machinus.ultimosello&amp;hl=es">Google Play</a></li>
+        <li><a href="#trailer">Tráiler</a></li>
+        <li><a href="#capturas">Capturas</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-title">Información</p>
+      <ul class="footer-links">
+        <li><a href="privacidad/">Política de privacidad</a></li>
+        <li>Contacto: <a href="mailto:ronindevstudio@gmail.com">ronindevstudio@gmail.com</a></li>
+        <li><a href="../?lang=en" hreflang="en" lang="en" data-lang="en">English</a></li>
+      </ul>
+    </div>
+    <p class="legal">© 2026 Adrian Duardo. Todos los derechos reservados. Google Play es una marca de Google LLC.</p>
+  </div>
+</footer>
+
+<dialog class="lightbox" aria-label="Captura">
+  <figure><img src="data:," alt=""><figcaption></figcaption></figure>
+  <div class="lightbox__bar">
+    <button type="button" data-prev aria-label="Captura anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M15 5l-7 7 7 7"/></svg></button>
+    <button type="button" data-close aria-label="Cerrar"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <button type="button" data-next aria-label="Captura siguiente"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></button>
+  </div>
+</dialog>
+
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

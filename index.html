@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Machinus · A wordless point-and-click adventure</title>
+<meta name="description" content="Machinus is a wordless point-and-click adventure for Android. You are Tilo, a small clockwork mailbox carrying the last letter to the giant tortoise who carries a city on her back.">
+<link rel="canonical" href="https://adriandy89.github.io/machinus/">
+<link rel="alternate" hreflang="en" href="https://adriandy89.github.io/machinus/">
+<link rel="alternate" hreflang="es" href="https://adriandy89.github.io/machinus/es/">
+<link rel="alternate" hreflang="x-default" href="https://adriandy89.github.io/machinus/">
+<meta name="theme-color" content="#f3e6cf">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Machinus">
+<meta property="og:title" content="Machinus · A wordless point-and-click adventure">
+<meta property="og:description" content="One mailbox. One last letter. One giant tortoise carrying a city on her back.">
+<meta property="og:url" content="https://adriandy89.github.io/machinus/">
+<meta property="og:image" content="https://adriandy89.github.io/machinus/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The giant clockwork tortoise with a rusty city on her shell, and Tilo the mailbox beside her.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/img/icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/caladea-bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<script>
+  /* First visit from a Spanish browser: offer the Spanish page. A saved choice or ?lang=en always wins. */
+  (function () {
+    try {
+      var saved = localStorage.getItem("machinus-lang");
+      if (!saved && !/[?&]lang=en\b/.test(location.search) && /^es\b/i.test(navigator.language || "")) {
+        location.replace("es/");
+      }
+    } catch (e) { /* storage blocked: stay in English */ }
+  })();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "Machinus",
+  "url": "https://adriandy89.github.io/machinus/",
+  "image": "https://adriandy89.github.io/machinus/assets/img/og-image.jpg",
+  "description": "A wordless point-and-click adventure: a small clockwork mailbox carries the last letter to the giant tortoise who carries a city on her back.",
+  "genre": ["Adventure", "Puzzle", "Point-and-click"],
+  "gamePlatform": "Android",
+  "operatingSystem": "Android",
+  "applicationCategory": "Game",
+  "playMode": "SinglePlayer",
+  "inLanguage": ["en", "es"],
+  "author": { "@type": "Person", "name": "Adrian Duardo" }
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Machinus, home">
+      <img src="assets/img/emblem-112.webp" width="101" height="112" alt="">
+      <span>Machinus</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#story">Story</a>
+      <a href="#trailer">Trailer</a>
+      <a href="#game">The game</a>
+      <a href="#screenshots">Screenshots</a>
+    </nav>
+    <div class="header-actions">
+      <a class="lang" href="es/" hreflang="es" lang="es" data-lang="es" aria-label="Leer en español">ES</a>
+      <a class="btn btn-play btn-sm" href="https://play.google.com/store/apps/details?id=com.machinus.ultimosello">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 3.9v16.2c0 .9 1 1.4 1.7.9l12.8-8.1c.7-.4.7-1.4 0-1.8L7.7 3C7 2.5 6 3 6 3.9z"/></svg>
+        Google Play
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <picture class="hero__art">
+      <source type="image/webp" srcset="assets/img/hero-1000.webp 1000w, assets/img/hero-1600.webp 1600w, assets/img/hero-2400.webp 2400w" sizes="100vw">
+      <img src="assets/img/hero-1600.jpg" width="2400" height="1200" fetchpriority="high"
+           alt="A giant clockwork tortoise, with a rusty city of towers and chimneys on her shell, sleeps standing in shallow water under a warm afternoon sky. Tilo, a small mailbox on a spring, stands before her head.">
+    </picture>
+    <div class="hero__copy">
+      <div class="hero__copy-inner">
+        <p class="hero__eyebrow">A wordless point-and-click adventure</p>
+        <h1 id="hero-title">Machinus</h1>
+        <p class="hero__lead">One mailbox. One last letter. One giant tortoise carrying a city on her back.</p>
+      </div>
+    </div>
+    <div class="hero__bar wrap">
+      <div class="ticket">
+        <div class="cta-row">
+          <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.machinus.ultimosello">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 3.9v16.2c0 .9 1 1.4 1.7.9l12.8-8.1c.7-.4.7-1.4 0-1.8L7.7 3C7 2.5 6 3 6 3.9z"/></svg>
+            <span><small>Get it on</small><span>Google Play</span></span>
+          </a>
+          <a class="btn btn-ghost" href="#trailer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M10 8.3v7.4c0 .5.5.8.9.5l5.6-3.7c.4-.2.4-.8 0-1L10.9 7.8c-.4-.3-.9 0-.9.5z"/></svg>
+            Watch the trailer
+          </a>
+        </div>
+        <ul class="chips" aria-label="At a glance">
+          <li>Not one word</li>
+          <li>About 4 hours</li>
+          <li>3 endings</li>
+          <li>No ads · No in-app purchases</li>
+          <li>Plays offline</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="story" aria-labelledby="story-title">
+    <div class="wrap story">
+      <div class="story__art reveal">
+        <img src="assets/img/emblem-480.webp" width="431" height="480" loading="lazy" decoding="async"
+             alt="A postage stamp showing a sealed envelope with a wax heart.">
+        <svg class="postmark" viewBox="0 0 240 130" aria-hidden="true" focusable="false">
+          <defs><path id="pm-story" d="M65 65m-43 0a43 43 0 1 1 86 0a43 43 0 1 1-86 0"/></defs>
+          <g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round">
+            <circle cx="65" cy="65" r="56"/><circle cx="65" cy="65" r="31"/>
+            <path d="M128 36c10-7 20-7 30 0s20 7 30 0 20-7 30 0"/><path d="M128 56c10-7 20-7 30 0s20 7 30 0 20-7 30 0"/>
+            <path d="M128 76c10-7 20-7 30 0s20 7 30 0 20-7 30 0"/><path d="M128 96c10-7 20-7 30 0s20 7 30 0 20-7 30 0"/>
+          </g>
+          <text font-family="Caladea, Georgia, serif" font-weight="700" font-size="12.5" letter-spacing="3" fill="currentColor"><textPath href="#pm-story">MACHINUS · LAST LETTER ·</textPath></text>
+          <text x="65" y="71" text-anchor="middle" font-family="Caladea, Georgia, serif" font-weight="700" font-size="17" fill="currentColor">2026</text>
+        </svg>
+      </div>
+      <div class="reveal">
+        <span class="kicker mark-return">The story</span>
+        <h2 class="visually-hidden" id="story-title">The story</h2>
+        <p class="story__opening">A letter drops into the slot of a forgotten mailbox. It is addressed to the giant tortoise who carries a city on her back.</p>
+        <p>You are Tilo, a small clockwork mailbox who hops everywhere and has not forgotten his duty. The rusty city on the Tortoise’s shell has stood still for years: the Ballast Guild shut the Post Office, melted down the stamps and drove in anchors so nothing would ever move again.</p>
+        <p>Someone has to deliver the last letter. Tilo is all that’s left.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--night" id="trailer" aria-labelledby="trailer-title">
+    <div class="wrap center">
+      <span class="kicker mark-urgent">Trailer</span>
+      <h2 class="h2" id="trailer-title">A city that hasn’t moved in years</h2>
+      <p class="lede">Hop through the docks, markets and rooftops of a mechanical city, then down to where the light doesn’t reach.</p>
+      <div class="video reveal">
+        <div class="stamp">
+          <video controls playsinline preload="none" width="1280" height="720" poster="assets/img/trailer-poster.jpg">
+            <source src="assets/video/trailer-en.mp4" type="video/mp4">
+          </video>
+        </div>
+        <button class="video__play" type="button" aria-label="Play the trailer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 3.9v16.2c0 .9 1 1.4 1.7.9l12.8-8.1c.7-.4.7-1.4 0-1.8L7.7 3C7 2.5 6 3 6 3.9z"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="game" aria-labelledby="game-title">
+    <div class="wrap">
+      <div class="center reveal">
+        <span class="kicker">What makes it different</span>
+        <h2 class="h2" id="game-title">Look, poke, think. Above all, stamp things.</h2>
+        <p class="lede">A point-and-click adventure for looking, poking and thinking. Pick things up, combine them, help the robots and odd creatures you meet, and solve hands-on mechanical puzzles up close.</p>
+      </div>
+
+      <div class="features">
+        <article class="feature reveal">
+          <div class="feature__media">
+            <div class="stamp"><img src="assets/img/feat-words.webp" width="1120" height="840" loading="lazy" decoding="async"
+                 alt="A thought bubble with small pictograms floats above Tilo and a brass gull in the sorting room."></div>
+          </div>
+          <div>
+            <span class="feature__num">01</span>
+            <h3>Not one word</h3>
+            <p>The story is told with drawings, gestures and sound. Characters ask for what they want in pictogram bubbles, and Tilo thinks in pictures.</p>
+          </div>
+        </article>
+
+        <article class="feature reveal">
+          <div class="feature__media">
+            <div class="stamp"><img src="assets/img/feat-stamps.webp" width="1120" height="840" loading="lazy" decoding="async"
+                 alt="A tick mark stamped on the gate of a toll booth by the sea, with Tilo waiting beside it."></div>
+            <img class="feature__accent" src="assets/img/stamp-received.webp" width="256" height="256" loading="lazy" decoding="async" alt="">
+          </div>
+          <div>
+            <span class="feature__num">02</span>
+            <h3>Stamps are your words</h3>
+            <p>Received, Urgent, Fragile… Each stamp is an idea the world understands: stamp Urgent on a label and the queue steps aside.</p>
+            <div class="stamp-row" aria-hidden="true">
+              <img src="assets/img/stamp-urgent.webp" width="256" height="256" loading="lazy" decoding="async" alt="">
+              <img src="assets/img/stamp-fragile.webp" width="256" height="256" loading="lazy" decoding="async" alt="">
+              <img src="assets/img/stamp-return-to-sender.webp" width="256" height="256" loading="lazy" decoding="async" alt="">
+              <img src="assets/img/stamp-to-head.webp" width="256" height="256" loading="lazy" decoding="async" alt="">
+            </div>
+          </div>
+        </article>
+
+        <article class="feature reveal">
+          <div class="feature__media">
+            <div class="stamp"><img src="assets/img/feat-spark.webp" width="880" height="660" loading="lazy" decoding="async"
+                 alt="Tilo and his companion in a scrapyard at sunset, next to an old clockwork hermit and his tent."></div>
+          </div>
+          <div>
+            <span class="feature__num">03</span>
+            <h3>A thief for a friend</h3>
+            <p>Spark, a copper mouse with a knack for stealing, becomes your companion and squeezes in where Tilo can’t fit.</p>
+          </div>
+        </article>
+
+        <article class="feature reveal">
+          <div class="feature__media">
+            <div class="stamp">
+              <div class="stamp__fill">
+                <img src="assets/img/item-route-sheet.webp" width="256" height="256" loading="lazy" decoding="async"
+                     alt="A worn route sheet with three boxes joined by dotted paths.">
+                <svg class="postmark" viewBox="0 0 130 130" aria-hidden="true" focusable="false">
+                  <defs><path id="pm-route" d="M65 65m-43 0a43 43 0 1 1 86 0a43 43 0 1 1-86 0"/></defs>
+                  <g fill="none" stroke="currentColor" stroke-width="2.6"><circle cx="65" cy="65" r="56"/><circle cx="65" cy="65" r="31"/></g>
+                  <text font-family="Caladea, Georgia, serif" font-weight="700" font-size="12.5" letter-spacing="3" fill="currentColor"><textPath href="#pm-route">ROUTE SHEET · 3 ENDINGS ·</textPath></text>
+                  <text x="65" y="72" text-anchor="middle" font-family="Caladea, Georgia, serif" font-weight="700" font-size="22" fill="currentColor">3</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div>
+            <span class="feature__num">04</span>
+            <h3>Choices with no wrong answer</h3>
+            <p>Some problems have three good solutions. What you pick goes on your route sheet and decides which of three endings you’ll see.</p>
+          </div>
+        </article>
+      </div>
+
+      <ul class="facts reveal" aria-label="In numbers">
+        <li class="fact"><strong>~4 h</strong><span>a prologue and six chapters</span></li>
+        <li class="fact"><strong>40+</strong><span>puzzles per playthrough</span></li>
+        <li class="fact"><strong>3</strong><span>different endings</span></li>
+        <li class="fact"><strong>15</strong><span>lost letters to find</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="screenshots" aria-labelledby="shots-title" style="padding-top:0">
+    <div class="wrap">
+      <div class="center reveal">
+        <span class="kicker mark-eye">Screenshots</span>
+        <h2 class="h2" id="shots-title">A world to look at slowly</h2>
+      </div>
+      <ul class="gallery">
+        <li class="reveal"><figure><a href="assets/img/shot-01-1600.webp" data-lightbox data-caption="A city riding a tortoise"><div class="stamp"><img src="assets/img/shot-01-800.webp" srcset="assets/img/shot-01-800.webp 800w, assets/img/shot-01-1600.webp 1600w" sizes="(min-width: 1000px) 560px, 100vw" width="1600" height="900" loading="lazy" decoding="async" alt="The title screen: the Tortoise and her city in a storm, with the letter stamp above."></div></a><figcaption>A city riding a tortoise</figcaption></figure></li>
+        <li class="reveal"><figure><a href="assets/img/shot-02-1600.webp" data-lightbox data-caption="One letter. Not one word."><div class="stamp"><img src="assets/img/shot-02-800.webp" srcset="assets/img/shot-02-800.webp 800w, assets/img/shot-02-1600.webp 1600w" sizes="(min-width: 1000px) 560px, 100vw" width="1600" height="900" loading="lazy" decoding="async" alt="The prologue: Tilo and a brass gull in the old sorting room of the post office."></div></a><figcaption>One letter. Not one word.</figcaption></figure></li>
+        <li class="reveal"><figure><a href="assets/img/shot-03-1600.webp" data-lightbox data-caption="Stamps are your words"><div class="stamp"><img src="assets/img/shot-03-800.webp" srcset="assets/img/shot-03-800.webp 800w, assets/img/shot-03-1600.webp 1600w" sizes="(min-width: 1000px) 560px, 100vw" width="1600" height="900" loading="lazy" decoding="async" alt="A stamp in use: a tick on the toll gate by the funicular, and the stamp bar at the top."></div></a><figcaption>Stamps are your words</figcaption></figure></li>
+        <li class="reveal"><figure><a href="assets/img/shot-04-1600.webp" data-lightbox data-caption="Think in pictures"><div class="stamp"><img src="assets/img/shot-04-800.webp" srcset="assets/img/shot-04-800.webp 800w, assets/img/shot-04-1600.webp 1600w" sizes="(min-width: 1000px) 560px, 100vw" width="1600" height="900" loading="lazy" decoding="async" alt="A thought bubble with pictograms in the sorting room."></div></a><figcaption>Think in pictures</figcaption></figure></li>
+        <li class="reveal"><figure><a href="assets/img/shot-05-1600.webp" data-lightbox data-caption="Fair puzzles. No timers."><div class="stamp"><img src="assets/img/shot-05-800.webp" srcset="assets/img/shot-05-800.webp 800w, assets/img/shot-05-1600.webp 1600w" sizes="(min-width: 1000px) 560px, 100vw" width="1600" height="900" loading="lazy" decoding="async" alt="A mechanical puzzle close-up: the cams of a brass gull on a workbench."></div></a><figcaption>Fair puzzles. No timers.</figcaption></figure></li>
+        <li class="reveal"><figure><a href="assets/img/shot-06-1600.webp" data-lightbox data-caption="A thief for a friend"><div class="stamp"><img src="assets/img/shot-06-800.webp" srcset="assets/img/shot-06-800.webp 800w, assets/img/shot-06-1600.webp 1600w" sizes="(min-width: 1000px) 560px, 100vw" width="1600" height="900" loading="lazy" decoding="async" alt="Spark the copper mouse with Tilo and the Hermit in the scrapyard."></div></a><figcaption>A thief for a friend</figcaption></figure></li>
+        <li class="reveal"><figure><a href="assets/img/shot-07-1600.webp" data-lightbox data-caption="Bring your own light"><div class="stamp"><img src="assets/img/shot-07-800.webp" srcset="assets/img/shot-07-800.webp 800w, assets/img/shot-07-1600.webp 1600w" sizes="(min-width: 1000px) 560px, 100vw" width="1600" height="900" loading="lazy" decoding="async" alt="A dark cave room lit only by a lantern."></div></a><figcaption>Bring your own light</figcaption></figure></li>
+        <li class="reveal"><figure><a href="assets/img/shot-08-1600.webp" data-lightbox data-caption="Here, everything gets weighed"><div class="stamp"><img src="assets/img/shot-08-800.webp" srcset="assets/img/shot-08-800.webp 800w, assets/img/shot-08-1600.webp 1600w" sizes="(min-width: 1000px) 560px, 100vw" width="1600" height="900" loading="lazy" decoding="async" alt="The market on the shell, with a big wheel, scales and stalls."></div></a><figcaption>Here, everything gets weighed</figcaption></figure></li>
+      </ul>
+
+      <div class="panels">
+        <section class="panel reveal" aria-labelledby="features-title">
+          <h3 id="features-title">Features</h3>
+          <ul class="ticks">
+            <li>Built for touch: play everything with one finger.</li>
+            <li>About 4 hours: a prologue and six chapters.</li>
+            <li>Over 40 puzzles per playthrough: items, stamps, your companion and mechanical close-ups.</li>
+            <li>Three different endings, shaped by your choices.</li>
+            <li>15 lost letters to find. Deliver them and see what changes.</li>
+            <li>Picture hints in two steps whenever you’re stuck.</li>
+            <li>No dead ends, no timers: play at your own pace.</li>
+            <li>Autosave and three save slots.</li>
+          </ul>
+        </section>
+        <section class="panel reveal" aria-labelledby="a11y-title">
+          <h3 id="a11y-title">Accessibility</h3>
+          <ul class="ticks">
+            <li>A “reveal” button shows everything you can touch.</li>
+            <li>Dragging is optional: tap the item, then tap where it goes.</li>
+            <li>Reduced motion and softened lightning options.</li>
+            <li>Interface scaling up to 150%.</li>
+            <li>Optional pictogram subtitles in English and Spanish.</li>
+            <li>Nothing is told through sound alone.</li>
+            <li>Wordless guides teach the gestures, and you can turn them off.</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <section class="section finale" aria-labelledby="finale-title">
+    <div class="finale__bg" aria-hidden="true">
+      <img src="assets/img/shot-07-1600.webp" width="1600" height="900" loading="lazy" decoding="async" alt="">
+    </div>
+    <div class="wrap reveal">
+      <img class="emblem" src="assets/img/emblem-112.webp" width="101" height="112" loading="lazy" decoding="async" alt="">
+      <h2 class="h2" id="finale-title">The last letter is waiting.</h2>
+      <p class="lede">No ads. No in-app purchases. Plays offline.</p>
+      <div class="cta-row">
+        <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.machinus.ultimosello">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 3.9v16.2c0 .9 1 1.4 1.7.9l12.8-8.1c.7-.4.7-1.4 0-1.8L7.7 3C7 2.5 6 3 6 3.9z"/></svg>
+          <span><small>Get it on</small><span>Google Play</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="./"><img src="assets/img/emblem-112.webp" width="101" height="112" alt=""><span>Machinus</span></a>
+      <p>A wordless point-and-click adventure for Android.</p>
+    </div>
+    <div>
+      <p class="footer-title">Game</p>
+      <ul class="footer-links">
+        <li><a href="https://play.google.com/store/apps/details?id=com.machinus.ultimosello">Google Play</a></li>
+        <li><a href="#trailer">Trailer</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-title">Info</p>
+      <ul class="footer-links">
+        <li><a href="privacy/">Privacy policy</a></li>
+        <li>Contact: <a href="mailto:ronindevstudio@gmail.com">ronindevstudio@gmail.com</a></li>
+        <li><a href="es/" hreflang="es" lang="es" data-lang="es">Español</a></li>
+      </ul>
+    </div>
+    <p class="legal">© 2026 Adrian Duardo. All rights reserved. Google Play is a trademark of Google LLC.</p>
+  </div>
+</footer>
+
+<dialog class="lightbox" aria-label="Screenshot">
+  <figure><img src="data:," alt=""><figcaption></figcaption></figure>
+  <div class="lightbox__bar">
+    <button type="button" data-prev aria-label="Previous screenshot"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M15 5l-7 7 7 7"/></svg></button>
+    <button type="button" data-close aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <button type="button" data-next aria-label="Next screenshot"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></button>
+  </div>
+</dialog>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

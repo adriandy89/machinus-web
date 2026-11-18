@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://adriandy89.github.io/machinus/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adriandy89.github.io/machinus/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://adriandy89.github.io/machinus/es/"/>
+  </url>
+  <url>
+    <loc>https://adriandy89.github.io/machinus/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adriandy89.github.io/machinus/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://adriandy89.github.io/machinus/es/"/>
+  </url>
+  <url>
+    <loc>https://adriandy89.github.io/machinus/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adriandy89.github.io/machinus/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://adriandy89.github.io/machinus/es/privacidad/"/>
+  </url>
+  <url>
+    <loc>https://adriandy89.github.io/machinus/es/privacidad/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adriandy89.github.io/machinus/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://adriandy89.github.io/machinus/es/privacidad/"/>
+  </url>
+</urlset>
