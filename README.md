@@ -4,10 +4,10 @@ Web estática de **Machinus**, una aventura gráfica sin palabras para Android, 
 
 | Página | Dirección publicada |
 |---|---|
-| Inicio (inglés) | https://adriandy89.github.io/machinus/ |
-| Inicio (español) | https://adriandy89.github.io/machinus/es/ |
-| Política de privacidad (inglés) | https://adriandy89.github.io/machinus/privacy/ |
-| Política de privacidad (español) | https://adriandy89.github.io/machinus/es/privacidad/ |
+| Inicio (inglés) | https://adriandy89.github.io/machinus-web/ |
+| Inicio (español) | https://adriandy89.github.io/machinus-web/es/ |
+| Política de privacidad (inglés) | https://adriandy89.github.io/machinus-web/privacy/ |
+| Política de privacidad (español) | https://adriandy89.github.io/machinus-web/es/privacidad/ |
 
 Un navegador en español que entra por primera vez en el inicio en inglés pasa solo a `/es/`. Si el visitante elige idioma con el botón EN/ES, se recuerda su elección.
 
@@ -24,17 +24,17 @@ cd F:\Godot\proyects\machinus-web
 git init -b main
 git add .
 git commit -m "Web de Machinus"
-gh repo create machinus --public --source . --remote origin --push
+gh repo create machinus-web --public --source . --remote origin --push
 ```
 
-El último comando crea `adriandy89/machinus` en GitHub y sube la web. Si prefieres hacerlo sin `gh`:
+El último comando crea `adriandy89/machinus-web` en GitHub y sube la web. Si prefieres hacerlo sin `gh`:
 
 1. Entra en https://github.com/new.
-2. *Repository name*: `machinus`, marca **Public** y no añadas README, `.gitignore` ni licencia.
+2. *Repository name*: `machinus-web`, marca **Public** y no añadas README, `.gitignore` ni licencia.
 3. Pulsa **Create repository**.
 4. En la terminal:
    ```bat
-   git remote add origin https://github.com/adriandy89/machinus.git
+   git remote add origin https://github.com/adriandy89/machinus-web.git
    git push -u origin main
    ```
 
@@ -43,13 +43,13 @@ El último comando crea `adriandy89/machinus` en GitHub y sube la web. Si prefie
 1. En el repositorio: **Settings → Pages**.
 2. En *Build and deployment* → *Source*, elige **Deploy from a branch**.
 3. En *Branch*, elige **main** y la carpeta **/ (root)**, y pulsa **Save**.
-4. Espera 1 o 2 minutos. Arriba aparece *Your site is live at https://adriandy89.github.io/machinus/*. El progreso se ve en la pestaña **Actions** («pages build and deployment»).
+4. Espera 1 o 2 minutos. Arriba aparece *Your site is live at https://adriandy89.github.io/machinus-web/*. El progreso se ve en la pestaña **Actions** («pages build and deployment»).
 5. Comprueba que **Enforce HTTPS** está marcado (lo está por defecto).
 
 Con `gh`, lo mismo en un comando:
 
 ```bat
-gh api -X POST repos/adriandy89/machinus/pages -f "source[branch]=main" -f "source[path]=/"
+gh api -X POST repos/adriandy89/machinus-web/pages -f "source[branch]=main" -f "source[path]=/"
 ```
 
 ### 3. Comprobar
@@ -60,13 +60,13 @@ Abre las cuatro direcciones de la tabla de arriba. Revisa sobre todo la polític
 
 | Dónde | Qué poner |
 |---|---|
-| **Política de la app → Contenido de la aplicación → Política de privacidad** | `https://adriandy89.github.io/machinus/privacy/` |
-| **Presencia en Play Store → Ficha de Play Store principal → Detalles de contacto → Sitio web** | `https://adriandy89.github.io/machinus/` |
+| **Política de la app → Contenido de la aplicación → Política de privacidad** | `https://adriandy89.github.io/machinus-web/privacy/` |
+| **Presencia en Play Store → Ficha de Play Store principal → Detalles de contacto → Sitio web** | `https://adriandy89.github.io/machinus-web/` |
 | **Detalles de contacto → Correo electrónico** | `ronindevstudio@gmail.com` (el mismo de la política) |
 
 La página en inglés enlaza a la española, y la española a la inglesa.
 
-> Los botones **Google Play** de la web apuntan a la ficha del juego (`com.machinus.ultimosello`). Hasta que la app sea pública en Play, esa dirección da «no encontrado». Es normal y se arregla sola el día del lanzamiento: no hay que tocar nada.
+> Los botones **Google Play** de la web apuntan a la ficha del juego (`com.machinus.game`). Hasta que la app sea pública en Play, esa dirección da «no encontrado». Es normal y se arregla sola el día del lanzamiento: no hay que tocar nada.
 
 ## Cambiar algo
 
@@ -91,7 +91,7 @@ cd F:\Godot\proyects\machinus-web
 npx --yes serve .
 ```
 
-Y abre la dirección que muestra (normalmente http://localhost:3000). La página 404 usa rutas absolutas (`/machinus/…`), así que en local sale sin estilos: es normal.
+Y abre la dirección que muestra (normalmente http://localhost:3000). La página 404 usa rutas absolutas (`/machinus-web/…`), así que en local sale sin estilos: es normal.
 
 ## Qué hay en cada archivo
 
@@ -114,7 +114,7 @@ Los textos de cada idioma están directamente en su HTML: para cambiar una frase
 
 ## Si el repositorio se llama distinto
 
-La dirección `https://adriandy89.github.io/machinus/` aparece escrita en las etiquetas para buscadores y redes (`canonical`, `og:url`, `og:image`, `hreflang`), en `sitemap.xml` y, como `/machinus/`, en `404.html`. Si usas otro nombre de repositorio o un dominio propio, busca y reemplaza `adriandy89.github.io/machinus` y `/machinus/` en toda la carpeta. Los demás enlaces son relativos y funcionan en cualquier dirección.
+La dirección `https://adriandy89.github.io/machinus-web/` aparece escrita en las etiquetas para buscadores y redes (`canonical`, `og:url`, `og:image`, `hreflang`), en `sitemap.xml` y, como `/machinus-web/`, en `404.html`. Si usas otro nombre de repositorio o un dominio propio, busca y reemplaza `adriandy89.github.io/machinus-web` y `/machinus-web/` en toda la carpeta. Los demás enlaces son relativos y funcionan en cualquier dirección.
 
 ### Dominio propio (opcional)
 
